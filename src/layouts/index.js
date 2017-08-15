@@ -29,12 +29,19 @@ const Header = () =>
         </Link>
       </h1>
     </div>
+    <div>
+      <Link to="/">About</Link>
+      <Link to="/projects/">Projects</Link>
+      <Link to="/resume/">Resume</Link>
+
+
+    </div>
   </div>
 
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Anna Melikhova Portfolio"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
