@@ -8,12 +8,14 @@ import './index.css'
 const Header = () =>
   <div
     style={{
+      background: 'rebeccapurple',
       marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
-        display: 'block',
+        margin: '0 auto',
+        maxWidth: 960,
         padding: '1.45rem 1.0875rem',
       }}
     >
@@ -21,27 +23,20 @@ const Header = () =>
         <Link
           to="/"
           style={{
-            color: 'black',
+            color: 'white',
             textDecoration: 'none',
           }}
         >
-          Anna Melikhova
+          Gatsby
         </Link>
       </h1>
-    </div>
-    <div>
-      <Link to="/">About</Link>
-      <Link to="/projects/">Projects</Link>
-      <Link to="/resume/">Resume</Link>
-
-
     </div>
   </div>
 
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="Anna Melikhova Portfolio"
+      title="Gatsby Default Starter"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
