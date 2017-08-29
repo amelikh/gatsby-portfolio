@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import logo from './anna_title.png'
 
 import './index.css'
 
@@ -17,31 +18,21 @@ const Header = () =>
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
-          Anna Melikhova
-        </Link>
-      </h1>
+     <div>
+      <img src={logo} alt="Logo" />
+      </div>
     </div>
-    <div>
+    <div style={{textAlign:'center'}}>
       <Link to="/">About</Link>
       <Link to="/projects/">Projects</Link>
-      <Link to="/resume/">Resume</Link>
-
-
+      <Link to="/resume/">Resume</Link> 
     </div>
   </div>
 
 const TemplateWrapper = ({ children }) =>
   <div>
     <Helmet
-      title="Anna Melikhova Portfolio"
+      title="Anna Melikhova"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
